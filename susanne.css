@@ -1,11 +1,66 @@
+/* blue #3A3A73 */
+/* red #CC0017 */
+
+main {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* styling for mobile */
 .table-schedule {
+    border-collapse: collapse;
+    display: block;
+}
+
+.table-schedule__head {
+    display: none;
+}
+
+.table-schedule__body {
+    display: block;
+}
+
+.table-schedule__body tr {
+    background-color: #fafafa;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+.table-schedule__body tr:nth-child(odd) {
+    border: 2px solid #CC0017;
+}
+
+.table-schedule__body tr:nth-child(even) {
+    border: 2px solid #3A3A73;
+}
+
+.table-schedule--date {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
     width: 100%;
 }
 
-.table-schedule--head {
-
+.table-schedule--time {
+    margin-bottom: 0.5em;
+    width: 20%;
 }
 
-.table-schedule--body {
+.table-schedule--location {
+    margin-bottom: 0.5em;
+    text-align: right;
+    width: 80%;
+}
 
+.table-schedule--opponent {
+    width: 80%;
+}
+
+.table-schedule--result {
+    text-align: right;
+    width: 20%;
 }
