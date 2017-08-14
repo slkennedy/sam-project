@@ -1,3 +1,83 @@
 .page-header {
-    background-color: grey;
+    background-color: #3A3A73;
+    color: #fff;
+}
+
+.page-header__logo,
+.page-header__heading,
+.page-header__sub-heading {
+    margin: 10px;
+}
+
+.page-header__logo {
+    height: 60px;
+    width: auto;
+}
+
+.page-header__heading {
+    font-size: 1.75rem;
+}
+
+.page-header__nav {
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__item {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.nav__link {
+    display: block;
+    color: white;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    background-color: #CC0017;
+}
+
+@media screen and (min-width: 992px) {
+    .page-header {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        padding-bottom: 0;
+    }
+
+    .page-header__heading,
+    .page-header__sub-heading {
+        flex-grow: 1;
+        text-align: right;
+    }
+
+    .page-header__heading {
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+
+    .page-header__sub-heading {
+        flex-basis: 100%;
+        margin-top: 5px;
+    }
+
+    .page-header__nav {
+        flex-grow: 1;
+        flex-basis: 100%;
+        text-align: right;
+    }
+
+    .nav__item {
+        display: inline-block;
+    }
 }
