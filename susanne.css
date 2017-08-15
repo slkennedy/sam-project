@@ -6,6 +6,9 @@ main {
     padding-right: 1em;
 }
 
+/****************************************************
+TABLE
+****************************************************/
 /* styling for mobile */
 .table-schedule {
     border-collapse: collapse;
@@ -63,4 +66,67 @@ main {
 .table-schedule--result {
     text-align: right;
     width: 20%;
+}
+
+/* styling for desktop */
+@media all and (min-width: 830px) {
+    .table-schedule {
+        border: 1px solid #3A3A73;
+        display: table;
+        width: 100%;
+    }
+
+    .table-schedule__head,
+    .table-schedule__body {
+        display: table-row-group;
+    }
+
+    .table-schedule__head {
+        background-color: #3A3A73;
+        color: white;
+    }
+
+    .table-schedule__head tr,
+    .table-schedule__body tr {
+        display: table-row;
+    }
+
+    .table-schedule__body tr:nth-child(odd),
+    .table-schedule__body tr:nth-child(even) {
+        border: none;
+        box-shadow: none;
+    }
+
+    .table-schedule__body tr:nth-child(odd) {
+        background-color: #fafafa;
+    }
+
+    .table-schedule__body tr:nth-child(even) {
+        background-color: #f0f0f0;
+    }
+
+    td[class^="table-schedule"] {
+        width: auto;
+    }
+
+    .table-schedule--location,
+    .table-schedule--result {
+        text-align: left;
+    }
+
+    .table-schedule--date {
+        font-size: 1em;
+        font-weight: normal;
+    }
+
+    th,
+    td {
+        display: table-cell;
+        padding: 10px;
+        text-align: left;
+    }
+
+    td {
+        vertical-align: top;
+    }
 }
