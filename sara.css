@@ -102,13 +102,20 @@
     }
 }
 
+body {
+    background-color: #eee;
+}
+
 main {
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
 section {
-    border-bottom: 1px solid #555;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 1em;
+    padding: 1em 2em;
 }
 
 section:last-of-type {
@@ -118,4 +125,5 @@ section:last-of-type {
 .team-photo {
     display: block;
     margin: 0 auto;
+    max-width: 100%;
 }
